@@ -1,6 +1,6 @@
 fileFormatVersion: 2
 guid: 016337270832d7145a9fd9f23b2b4b3a
-timeCreated: 1515349413
+timeCreated: 1516087070
 licenseType: Free
 SubstanceImporter:
   serializedVersion: 5
@@ -38,8 +38,8 @@ SubstanceImporter:
     - name: paint_color
       value:
         scalar[0]: 1
-        scalar[1]: 0.9698783
-        scalar[2]: 0.8014706
+        scalar[1]: 1
+        scalar[2]: 1
         scalar[3]: 0
         texture: {instanceID: 0}
     - name: nails
@@ -170,7 +170,7 @@ SubstanceImporter:
         texture: {instanceID: 0}
     - name: ao_spreading
       value:
-        scalar[0]: 0.5
+        scalar[0]: 0.174
         scalar[1]: 0
         scalar[2]: 0
         scalar[3]: 0
@@ -260,7 +260,7 @@ SubstanceImporter:
       - _UVSec: 0
       - _ZWrite: 1
       colors:
-      - _Color: {r: 1, g: 1, b: 1, a: 1}
+      - _Color: {r: 1, g: 1, b: 0.947, a: 1}
       - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}
     textureParameters:
     - name: painted_fence_basecolor

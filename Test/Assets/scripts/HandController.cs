@@ -1,17 +1,15 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.SceneManagement;
-using UnityEngine.UI;
+
 
 public class HandController : MonoBehaviour
 {
 
-
     public SteamVR_TrackedObject trackedObj;
     public SteamVR_Controller.Device device;
 
-
+    public Vector3 pos;
     //public doorController DoorController;
 
 
@@ -20,28 +18,28 @@ public class HandController : MonoBehaviour
     void Start()
     {
         trackedObj = GetComponent<SteamVR_TrackedObject>();
-
-
-        // Update is called once per frame
-
-
-
     }
 
     void update()
     {
         device = SteamVR_Controller.Input((int)trackedObj.index);
-        if (device.GetPressUp(SteamVR_Controller.ButtonMask.Trigger))
+
+        pos = gameObject.transform.position;
+
+
+
+
+        if (device.GetPress(SteamVR_Controller.ButtonMask.Grip))
         {
-            device.TriggerHapticPulse(3000);
-        }
-
-
+            //device.TriggerHapticPulse(3000);
+            Debug.Log("SHOULD HAPTIC");
 
         }
 
-
-    public void OnTriggerEnter(Collider col)
+    }
+}
+    
+    /*public void OnTriggerEnter(Collider col)
     {
         if (col.gameObject.CompareTag("Model"))
         {
@@ -75,3 +73,4 @@ public class HandController : MonoBehaviour
         }
     }
 }
+*/

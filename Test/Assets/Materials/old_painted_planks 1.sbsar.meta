@@ -1,6 +1,6 @@
 fileFormatVersion: 2
 guid: df30fded771604c4f99156de2b3e695e
-timeCreated: 1515347021
+timeCreated: 1516082554
 licenseType: Free
 SubstanceImporter:
   serializedVersion: 5
@@ -156,7 +156,7 @@ SubstanceImporter:
         texture: {instanceID: 0}
     - name: planks_q,ount
       value:
-        scalar[0]: 8
+        scalar[0]: 7.64
         scalar[1]: 0
         scalar[2]: 0
         scalar[3]: 0
@@ -184,9 +184,9 @@ SubstanceImporter:
         texture: {instanceID: 0}
     - name: paint_color
       value:
-        scalar[0]: 0.9044118
-        scalar[1]: 0.8710238
-        scalar[2]: 0.8113106
+        scalar[0]: 1
+        scalar[1]: 1
+        scalar[2]: 1
         scalar[3]: 0
         texture: {instanceID: 0}
     - name: paint_roughness
